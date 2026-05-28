@@ -1,7 +1,7 @@
 # ========================================= List ===============================================
 print("LIST******************************************")
 a = [121, "cub", [90, "hub"]]
-a.append(2)  # It help the add the value in the existing list
+a.append(2)  # It help to add the value in the existing list
 a.append("another one")
 print(a)
 print(len(a))  # It help to find the length in a array
@@ -83,6 +83,8 @@ arrayLoop = arr.array("i", [3, 4, 5])
 # Loop through values
 for num in arrayLoop:
     print(num)
+    
+print("\n")
 
 # Loop through index
 for i in range(len(arrayLoop)):
@@ -96,7 +98,7 @@ for i in range(0, len(arrayLoop)):
 
 # ================================ ADDING ELEMENT WITH THE insert() ======================================
 # Note: We have used *a and *b for unpacking the array elements - Try it then only we can understand
-print("\nAdding element using insert()****************************")
+print("\nAdding element using insert(insert-index, new-value)****************************")
 insertArray = arr.array("i", [7, 8, 9, 0])
 print(*insertArray)
 
@@ -111,7 +113,7 @@ print(accessIndexArray[2])
 
 
 # ================================ Removing the elements(.remove() or .pop()) ============================
-print("\nsing .remove() and .pop()********************************")
+print("\nUsing .remove() and .pop()********************************")
 removeArray = arr.array("i", [5, 3, 5, 2])
 # delete the element using number exist in the array(ex: 5)
 removeArray.remove(5)
@@ -168,8 +170,8 @@ print(updateElement)
 # =============================Operations on array ========================================
 print("\nOperations on array****************************************")
 
-# ++++++ Counting Elements using .count() +++++++++++++++++
-print("Counting Elements using .count()")
+# ++++++ Counting Elements(value) using .count() +++++++++++++++++
+print("Counting Elements(value) using .count()")
 countArray = arr.array("i", [3, 4, 5, 3, 7, 3, 5, 7, 5])
 count = countArray.count(3)
 print(count)
@@ -191,13 +193,11 @@ print(*extendElement)
 # ===================================== append and extend comparison ====================================
 print('\nappend and extend comparison******************')
 ae = [1, 2]
-
 ae.append([3, 4])
 print(ae)
 # [1,2,[3,4]]
 
 ae = [1, 2]
-
 ae.extend([3, 4])
 print(ae)
 # [1,2,3,4]

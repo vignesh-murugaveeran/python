@@ -118,3 +118,55 @@ print(x, y)
 # print(x + y)
 
 print('Hello', 'World')
+
+
+# Global Variables
+print('Global Variables**********************************')
+
+# Create a variable outside of a function, and use it inside the function
+gv = 'fire'
+
+def testing():
+    print(f'Print the value from the Global Variables: {gv}')
+    
+testing()
+
+
+# Create a variable inside a function, with the same name as the global variable
+gv1 = 'awesome'
+
+def testing2():
+    gv1 = 'fantastic'
+    print(f'Python1 is {gv1}')
+    
+testing2()
+
+print(f'Python1.1 is {gv1}')
+
+
+# Global Keyword
+print('Global Keyword*********************')
+
+# To create a global variable inside a function, you can use the global keyword.
+def testing3():
+    global gk
+    gk = 'fantastic'
+
+testing3()
+
+print(f'python2 is {gk}')
+
+
+# use the global keyword if you want to change a global variable inside a function.
+
+gk2 = 'wow'
+
+def testing4():
+    global gk2
+    gk2 = 'good'
+    print(f'python3 is {gk2}')
+    
+testing4()
+
+print(f'python3.1 is {gk2}')
+
