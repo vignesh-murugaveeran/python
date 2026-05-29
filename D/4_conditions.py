@@ -47,16 +47,32 @@ else:
 print('\nShorthand =====================================')
 # Short Hand if
 print('Short Hand if ++++++++++++++++++++++++')
-# one-line if statement
 
+# one-line if statement
+print('one-line if statement ++++++++++++++')
 c = 5
 c1 = 7
 if c < c1: print('d is greater than c')
 
 # Short Hand If ... Else
 print('Short Hand If ... Else +++++++++++++++++++')
-
 e = 67
 e1 = 25
 print('e1 is greater than e') if e1 > e else print('e is greater than e1')
+
+# Assign a value with if-else
+# Ternary operators are particularly useful for simple assignments and return statements.
+print('Assign a value with if-else ++++++++++++++++')
+f = 13
+f1 = 20
+bigger = f if f > f1 else f1
+print(f'Bigger is {bigger}')
+
+
+print('one-line three outcome +++++++++++++++++++++')
+# one-line three outcome
+g = 3457
+g1 = 3457
+print('g is greater than g1') if g > g1 else print('g and g1 are equal') if g == g1 else print('g is less than g1')
+
 
